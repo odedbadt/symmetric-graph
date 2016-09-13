@@ -1,0 +1,45 @@
+
+
+      2:bbP 
+    /  | \
+5:abbP---0:P--1:bP
+   
+
+      2:abP
+    /  | \
+abbP---0:P--1:bP
+5:aabP
+
+
+     / 2:abP
+    /  |   |
+abbP--0:P  |
+    \__  \ |
+       \_1:bP
+  
+    
+       +
+
+         8:babP
+        /   |  \
+11:baabP---6:bP--7:bbP
+
+
+bbP = abP
+ /\
+/  \
+----P-----bP
+\  /
+ \/
+
+
+ babbP = 
+ baabP
+
+
+ =?
+
+ aabP
+ =
+ abbP
+ 

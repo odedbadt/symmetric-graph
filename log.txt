@@ -1,0 +1,279 @@
+a
+Duplicated graph: 
+0 : ('P', (False, [1, 2]))
+1 : ('bP', (False, [2, 0]))
+2 : ('bbP', (False, [0, 1]))
+3 : ('aP', (False, [4, 5]))
+4 : ('abP', (False, [5, 3]))
+5 : ('abbP', (False, [3, 4]))
+Reducing 2 : bbP into abP
+Reducing 3 : aP into P
+Reducing 5 : abbP into aabP
+Reduced graph: 
+0 : ('P', (False, [1, 2]))
+1 : ('bP', (False, [2, 0]))
+2 : ('abP', (False, [0, 1]))
+3 : ('P', (False, [4, 5]))
+4 : ('abP', (False, [5, 3]))
+5 : ('aabP', (False, [3, 4]))
+Merging the following: {3: 0, 4: 2}
+Graph: 
+0 : ('P', (False, [1, 2]))
+1 : ('bP', (False, [2, 0]))
+2 : ('abP', (False, [0, 1]))
+3 : ('P', (False, [4, 5]))
+4 : ('abP', (False, [5, 3]))
+5 : ('aabP', (False, [3, 4]))
+Merging Table: 
+{3: 0, 4: 2}
+merging 3 into 0
+combined_merging_table: {3: 0, 4: 2}
+Graph: 
+0 : ('P', (False, [1, 2, 5]))
+1 : ('bP', (False, [2, 0]))
+2 : ('abP', (False, [0, 1]))
+4 : ('abP', (False, [5, 0]))
+5 : ('aabP', (False, [0, 2]))
+Merging Table: 
+{3: 0, 4: 2}
+merging 4 into 2
+combined_merging_table: {3: 0, 4: 2}
+Result graph: 
+0 : ('P', (False, [1, 2, 5]))
+1 : ('bP', (False, [2, 0]))
+2 : ('abP', (False, [5, 0, 1]))
+5 : ('aabP', (False, [0, 2]))
+a
+Duplicated graph: 
+0 : ('P', (False, [1, 2, 5]))
+1 : ('bP', (False, [2, 0]))
+2 : ('abP', (False, [5, 0, 1]))
+5 : ('aabP', (False, [0, 2]))
+6 : ('aP', (False, [7, 8, 11]))
+7 : ('abP', (False, [8, 6]))
+8 : ('aabP', (False, [11, 6, 7]))
+11 : ('aaabP', (False, [6, 8]))
+Reducing 6 : aP into P
+Reducing 11 : aaabP into bP
+Reduced graph: 
+0 : ('P', (False, [1, 2, 5]))
+1 : ('bP', (False, [2, 0]))
+2 : ('abP', (False, [5, 0, 1]))
+5 : ('aabP', (False, [0, 2]))
+6 : ('P', (False, [7, 8, 11]))
+7 : ('abP', (False, [8, 6]))
+8 : ('aabP', (False, [11, 6, 7]))
+11 : ('bP', (False, [6, 8]))
+Merging the following: {8: 5, 11: 1, 6: 0, 7: 2}
+Graph: 
+0 : ('P', (False, [1, 2, 5]))
+1 : ('bP', (False, [2, 0]))
+2 : ('abP', (False, [5, 0, 1]))
+5 : ('aabP', (False, [0, 2]))
+6 : ('P', (False, [7, 8, 11]))
+7 : ('abP', (False, [8, 6]))
+8 : ('aabP', (False, [11, 6, 7]))
+11 : ('bP', (False, [6, 8]))
+Merging Table: 
+{8: 5, 11: 1, 6: 0, 7: 2}
+merging 8 into 5
+combined_merging_table: {8: 5, 11: 1, 6: 0, 7: 2}
+Graph: 
+0 : ('P', (False, [1, 2, 5]))
+1 : ('bP', (False, [2, 0]))
+2 : ('abP', (False, [5, 0, 1]))
+5 : ('aabP', (False, [1, 0, 2]))
+6 : ('P', (False, [2, 5, 1]))
+7 : ('abP', (False, [5, 0]))
+11 : ('bP', (False, [0, 5]))
+Merging Table: 
+{8: 5, 11: 1, 6: 0, 7: 2}
+merging 11 into 1
+combined_merging_table: {8: 5, 11: 1, 6: 0, 7: 2}
+Graph: 
+0 : ('P', (False, [1, 2, 5]))
+1 : ('bP', (False, [2, 0, 5]))
+2 : ('abP', (False, [5, 0, 1]))
+5 : ('aabP', (False, [1, 0, 2]))
+6 : ('P', (False, [2, 5, 1]))
+7 : ('abP', (False, [5, 0]))
+Merging Table: 
+{8: 5, 11: 1, 6: 0, 7: 2}
+merging 6 into 0
+combined_merging_table: {8: 5, 11: 1, 6: 0, 7: 2}
+Graph: 
+0 : ('P', (True, [2, 5, 1]))
+1 : ('bP', (False, [2, 0, 5]))
+2 : ('abP', (False, [5, 0, 1]))
+5 : ('aabP', (False, [1, 0, 2]))
+7 : ('abP', (False, [5, 0]))
+Merging Table: 
+{8: 5, 11: 1, 6: 0, 7: 2}
+merging 7 into 2
+combined_merging_table: {8: 5, 11: 1, 6: 0, 7: 2}
+Result graph: 
+0 : ('P', (True, [2, 5, 1]))
+1 : ('bP', (False, [2, 0, 5]))
+2 : ('abP', (False, [5, 0, 1]))
+5 : ('aabP', (False, [1, 0, 2]))
+a
+Duplicated graph: 
+0 : ('P', (True, [2, 5, 1]))
+1 : ('bP', (False, [2, 0, 5]))
+2 : ('abP', (False, [5, 0, 1]))
+5 : ('aabP', (False, [1, 0, 2]))
+6 : ('aP', (True, [8, 11, 7]))
+7 : ('abP', (False, [8, 6, 11]))
+8 : ('aabP', (False, [11, 6, 7]))
+11 : ('aaabP', (False, [7, 6, 8]))
+Reducing 6 : aP into P
+Reducing 11 : aaabP into bP
+Reduced graph: 
+0 : ('P', (True, [2, 5, 1]))
+1 : ('bP', (False, [2, 0, 5]))
+2 : ('abP', (False, [5, 0, 1]))
+5 : ('aabP', (False, [1, 0, 2]))
+6 : ('P', (True, [8, 11, 7]))
+7 : ('abP', (False, [8, 6, 11]))
+8 : ('aabP', (False, [11, 6, 7]))
+11 : ('bP', (False, [7, 6, 8]))
+Merging the following: {8: 5, 11: 1, 6: 0, 7: 2}
+Graph: 
+0 : ('P', (True, [2, 5, 1]))
+1 : ('bP', (False, [2, 0, 5]))
+2 : ('abP', (False, [5, 0, 1]))
+5 : ('aabP', (False, [1, 0, 2]))
+6 : ('P', (True, [8, 11, 7]))
+7 : ('abP', (False, [8, 6, 11]))
+8 : ('aabP', (False, [11, 6, 7]))
+11 : ('bP', (False, [7, 6, 8]))
+Merging Table: 
+{8: 5, 11: 1, 6: 0, 7: 2}
+merging 8 into 5
+combined_merging_table: {8: 5, 11: 1, 6: 0, 7: 2}
+Graph: 
+0 : ('P', (True, [2, 5, 1]))
+1 : ('bP', (False, [2, 0, 5]))
+2 : ('abP', (False, [5, 0, 1]))
+5 : ('aabP', (False, [1, 0, 2]))
+6 : ('P', (True, [5, 1, 2]))
+7 : ('abP', (False, [5, 0, 1]))
+11 : ('bP', (False, [2, 0, 5]))
+Merging Table: 
+{8: 5, 11: 1, 6: 0, 7: 2}
+merging 11 into 1
+combined_merging_table: {8: 5, 11: 1, 6: 0, 7: 2}
+Graph: 
+0 : ('P', (True, [2, 5, 1]))
+1 : ('bP', (False, [2, 0, 5]))
+2 : ('abP', (False, [5, 0, 1]))
+5 : ('aabP', (False, [1, 0, 2]))
+6 : ('P', (True, [5, 1, 2]))
+7 : ('abP', (False, [5, 0, 1]))
+Merging Table: 
+{8: 5, 11: 1, 6: 0, 7: 2}
+merging 6 into 0
+combined_merging_table: {8: 5, 11: 1, 6: 0, 7: 2}
+Graph: 
+0 : ('P', (True, [5, 1, 2]))
+1 : ('bP', (False, [2, 0, 5]))
+2 : ('abP', (False, [5, 0, 1]))
+5 : ('aabP', (False, [1, 0, 2]))
+7 : ('abP', (False, [5, 0, 1]))
+Merging Table: 
+{8: 5, 11: 1, 6: 0, 7: 2}
+merging 7 into 2
+combined_merging_table: {8: 5, 11: 1, 6: 0, 7: 2}
+Result graph: 
+0 : ('P', (True, [5, 1, 2]))
+1 : ('bP', (False, [2, 0, 5]))
+2 : ('abP', (False, [5, 0, 1]))
+5 : ('aabP', (False, [1, 0, 2]))
+b
+Duplicated graph: 
+0 : ('P', (True, [5, 1, 2]))
+1 : ('bP', (False, [2, 0, 5]))
+2 : ('abP', (False, [5, 0, 1]))
+5 : ('aabP', (False, [1, 0, 2]))
+6 : ('bP', (True, [11, 7, 8]))
+7 : ('bbP', (False, [8, 6, 11]))
+8 : ('babP', (False, [11, 6, 7]))
+11 : ('baabP', (False, [7, 6, 8]))
+Reducing 7 : bbP into abP
+Reducing 8 : babP into P
+Reduced graph: 
+0 : ('P', (True, [5, 1, 2]))
+1 : ('bP', (False, [2, 0, 5]))
+2 : ('abP', (False, [5, 0, 1]))
+5 : ('aabP', (False, [1, 0, 2]))
+6 : ('bP', (True, [11, 7, 8]))
+7 : ('abP', (False, [8, 6, 11]))
+8 : ('P', (False, [11, 6, 7]))
+11 : ('baabP', (False, [7, 6, 8]))
+Merging the following: {8: 0, 6: 1, 7: 2}
+Graph: 
+0 : ('P', (True, [5, 1, 2]))
+1 : ('bP', (False, [2, 0, 5]))
+2 : ('abP', (False, [5, 0, 1]))
+5 : ('aabP', (False, [1, 0, 2]))
+6 : ('bP', (True, [11, 7, 8]))
+7 : ('abP', (False, [8, 6, 11]))
+8 : ('P', (False, [11, 6, 7]))
+11 : ('baabP', (False, [7, 6, 8]))
+Merging Table: 
+{8: 0, 6: 1, 7: 2}
+merging 8 into 0
+combined_merging_table: {8: 0, 6: 1, 7: 2}
+Graph: 
+0 : ('P', (True, [1, 2]))
+1 : ('bP', (False, [2, 0, 5]))
+2 : ('abP', (False, [5, 0, 1]))
+5 : ('aabP', (False, [1, 0, 2]))
+6 : ('bP', (True, [11, 2, 0]))
+7 : ('abP', (False, [0, 1, 11]))
+11 : ('baabP', (False, [2, 1, 0]))
+Merging Table: 
+{8: 0, 6: 1, 7: 2}
+merging 6 into 1
+Graph: 
+0 : ('P', (True, [1, 2]))
+1 : ('bP', (False, [2, 0, 5]))
+2 : ('abP', (False, [5, 0, 1]))
+5 : ('aabP', (False, [1, 0, 2]))
+6 : ('bP', (True, [11, 2, 0]))
+7 : ('abP', (False, [0, 1, 11]))
+11 : ('baabP', (False, [2, 1, 0]))
+Merging Table:  
+{0: 5, 8: 0, 6: 1, 7: 2}
+merging 0 into 5
+---------------------------------------------------------------------------
+Exception                                 Traceback (most recent call last)
+<ipython-input-105-9ff0832c64ed> in <module>()
+     32     print 'Merging the following: {}'.format(merging_table)
+     33     for src, dst in merging_table.iteritems():
+---> 34         new_graph = merge_vertices(new_graph, src, dst, merging_table)
+     35     graph = new_graph
+     36     print 'Result graph: '
+
+<ipython-input-59-6605de7bb5e6> in merge_vertices(graph, i1, i2, merging_table, countdown)
+     33     combined_merging_table[i1] = i2
+     34     for src, dst in local_merging_table.iteritems():
+---> 35         new_graph = merge_vertices(graph, src, dst, combined_merging_table, countdown=countdown-1)
+     36     print 'combined_merging_table: {}'.format(combined_merging_table)
+     37     return without_keys(replace(new_graph, combined_merging_table), {i1})
+
+<ipython-input-59-6605de7bb5e6> in merge_vertices(graph, i1, i2, merging_table, countdown)
+     19     f2, (c2, n2) = graph[i2]
+     20     mapper = partial(map, partial(index_or_identity, merging_table))
+---> 21     cc = common_cycle((c1, mapper(n1)), (c2, mapper(n2)))
+     22     if cc is None:
+     23         print 'Not merging'
+
+<ipython-input-102-5c9c3b8c15d9> in common_cycle(s1, s2)
+     30             result = result + zip(s1, s2)
+     31         elif tpl[2] - prv[2] != tpl[1] - prv[1]:
+---> 32             raise Exception('Mismatch in index {} (sorted)'.format(i))
+     33         else:
+     34             s1 = [l1[i] for i in range(prv[1], tpl[1])]
+
+Exception: Mismatch in index 0 (sorted)
