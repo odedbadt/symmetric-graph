@@ -1,5 +1,5 @@
-
-
+Tetrahedron
+===========
       2:bbP 
     /  | \
 5:abbP---0:P--1:bP
@@ -43,3 +43,37 @@ bbP = abP
  =
  abbP
  
+Dodecahedron
+============
+    7:abbP                3:bbbP
+           \              /   \
+9:aabP        6:abP = 4:bbbbP  2:bbP
+                |       |        |
+                |       |        |
+                |       |        |
+               5:P =  0:P-------1:bP
+
+
+
+0 : ('P', (True, [1, 2, None]))
+1 : ('bP', (True, [2, 0, None]))
+2 : ('bbP', (True, [0, 1, None]))
+4 : ('abP', (True, [2, 0, None]))
+5 : ('P', (True, [6, 7, None]))
+6 : ('abP', (True, [7, 5, None]))
+7 : ('abbP', (True, [5, 6, None]))
+9 : ('aabP', (True, [7, 5, None]))
+Merging Table: 
+{5: 0, 6: 4}
+
+
+Reduced graph: 
+0 : ('P', (True, [1, 2, None]))
+1 : ('bP', (True, [2, 0, None]))
+2 : ('bbP', (True, [0, 1, None]))
+3 : ('bP', (True, [4, 5, None]))
+4 : ('bbP', (True, [5, 3, None]))
+5 : ('bbbP', (True, [3, 4, None]))
+Merging the following: {3: 1, 4: 2}
+merging 3 into 1
+with

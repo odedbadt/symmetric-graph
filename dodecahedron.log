@@ -1,0 +1,1195 @@
+Applying a
+Duplicated graph: 
+0 : ('P', (True, [4, 1, None]))
+1 : ('bP', (True, [0, 2, None]))
+2 : ('bbP', (True, [1, 3, None]))
+3 : ('bbbP', (True, [2, 4, None]))
+4 : ('bbbbP', (True, [3, 0, None]))
+5 : ('aP', (True, [9, 6, None]))
+6 : ('abP', (True, [5, 7, None]))
+7 : ('abbP', (True, [6, 8, None]))
+8 : ('abbbP', (True, [7, 9, None]))
+9 : ('abbbbP', (True, [8, 5, None]))
+Reducing 4 : bbbbP into abP
+Reducing 5 : aP into P
+Reducing 9 : abbbbP into aabP
+Reduced graph: 
+0 : ('P', (True, [4, 1, None]))
+1 : ('bP', (True, [0, 2, None]))
+2 : ('bbP', (True, [1, 3, None]))
+3 : ('bbbP', (True, [2, 4, None]))
+4 : ('abP', (True, [3, 0, None]))
+5 : ('P', (True, [9, 6, None]))
+6 : ('abP', (True, [5, 7, None]))
+7 : ('abbP', (True, [6, 8, None]))
+8 : ('abbbP', (True, [7, 9, None]))
+9 : ('aabP', (True, [8, 5, None]))
+Merging the following: {5: 0, 6: 4}
+merging 5 into 0
+with
+Graph: 
+0 : ('P', (True, [4, 1, None]))
+1 : ('bP', (True, [0, 2, None]))
+2 : ('bbP', (True, [1, 3, None]))
+3 : ('bbbP', (True, [2, 4, None]))
+4 : ('abP', (True, [3, 0, None]))
+5 : ('P', (True, [9, 6, None]))
+6 : ('abP', (True, [5, 7, None]))
+7 : ('abbP', (True, [6, 8, None]))
+8 : ('abbbP', (True, [7, 9, None]))
+9 : ('aabP', (True, [8, 5, None]))
+Merging Table: 
+{5: 0, 6: 4}
+(True, [(4, 4), (1, 1), (9, 9)])
+combined_merging_table: {5: 0, 6: 4}
+merging 6 into 4
+with
+Graph: 
+0 : ('P', (True, [4, 1, 9]))
+1 : ('bP', (True, [0, 2, None]))
+2 : ('bbP', (True, [1, 3, None]))
+3 : ('bbbP', (True, [2, 4, None]))
+4 : ('abP', (True, [3, 0, None]))
+6 : ('abP', (True, [0, 7, None]))
+7 : ('abbP', (True, [4, 8, None]))
+8 : ('abbbP', (True, [7, 9, None]))
+9 : ('aabP', (True, [8, 0, None]))
+Merging Table: 
+{5: 0, 6: 4}
+(True, [(0, 0), (7, 7), (3, 3)])
+combined_merging_table: {5: 0, 6: 4}
+Result graph: 
+0 : ('P', (True, [4, 1, 9]))
+1 : ('bP', (True, [0, 2, None]))
+2 : ('bbP', (True, [1, 3, None]))
+3 : ('bbbP', (True, [2, 4, None]))
+4 : ('abP', (True, [0, 7, 3]))
+7 : ('abbP', (True, [4, 8, None]))
+8 : ('abbbP', (True, [7, 9, None]))
+9 : ('aabP', (True, [8, 0, None]))
+Applying a
+Duplicated graph: 
+0 : ('P', (True, [4, 1, 9]))
+1 : ('bP', (True, [0, 2, None]))
+2 : ('bbP', (True, [1, 3, None]))
+3 : ('bbbP', (True, [2, 4, None]))
+4 : ('abP', (True, [0, 7, 3]))
+7 : ('abbP', (True, [4, 8, None]))
+8 : ('abbbP', (True, [7, 9, None]))
+9 : ('aabP', (True, [8, 0, None]))
+10 : ('aP', (True, [14, 11, 19]))
+11 : ('abP', (True, [10, 12, None]))
+12 : ('abbP', (True, [11, 13, None]))
+13 : ('abbbP', (True, [12, 14, None]))
+14 : ('aabP', (True, [10, 17, 13]))
+17 : ('aabbP', (True, [14, 18, None]))
+18 : ('aabbbP', (True, [17, 19, None]))
+19 : ('aaabP', (True, [18, 10, None]))
+Reducing 10 : aP into P
+Reducing 19 : aaabP into bP
+Reduced graph: 
+0 : ('P', (True, [4, 1, 9]))
+1 : ('bP', (True, [0, 2, None]))
+2 : ('bbP', (True, [1, 3, None]))
+3 : ('bbbP', (True, [2, 4, None]))
+4 : ('abP', (True, [0, 7, 3]))
+7 : ('abbP', (True, [4, 8, None]))
+8 : ('abbbP', (True, [7, 9, None]))
+9 : ('aabP', (True, [8, 0, None]))
+10 : ('P', (True, [14, 11, 19]))
+11 : ('abP', (True, [10, 12, None]))
+12 : ('abbP', (True, [11, 13, None]))
+13 : ('abbbP', (True, [12, 14, None]))
+14 : ('aabP', (True, [10, 17, 13]))
+17 : ('aabbP', (True, [14, 18, None]))
+18 : ('aabbbP', (True, [17, 19, None]))
+19 : ('bP', (True, [18, 10, None]))
+Merging the following: {10: 0, 11: 4, 12: 7, 13: 8, 14: 9, 19: 1}
+merging 10 into 0
+with
+Graph: 
+0 : ('P', (True, [4, 1, 9]))
+1 : ('bP', (True, [0, 2, None]))
+2 : ('bbP', (True, [1, 3, None]))
+3 : ('bbbP', (True, [2, 4, None]))
+4 : ('abP', (True, [0, 7, 3]))
+7 : ('abbP', (True, [4, 8, None]))
+8 : ('abbbP', (True, [7, 9, None]))
+9 : ('aabP', (True, [8, 0, None]))
+10 : ('P', (True, [14, 11, 19]))
+11 : ('abP', (True, [10, 12, None]))
+12 : ('abbP', (True, [11, 13, None]))
+13 : ('abbbP', (True, [12, 14, None]))
+14 : ('aabP', (True, [10, 17, 13]))
+17 : ('aabbP', (True, [14, 18, None]))
+18 : ('aabbbP', (True, [17, 19, None]))
+19 : ('bP', (True, [18, 10, None]))
+Merging Table: 
+{10: 0, 11: 4, 12: 7, 13: 8, 14: 9, 19: 1}
+(True, [(1, 1), (9, 9), (4, 4)])
+combined_merging_table: {19: 1, 10: 0, 11: 4, 12: 7, 13: 8, 14: 9}
+merging 11 into 4
+with
+Graph: 
+0 : ('P', (True, [1, 9, 4]))
+1 : ('bP', (True, [0, 2, None]))
+2 : ('bbP', (True, [1, 3, None]))
+3 : ('bbbP', (True, [2, 4, None]))
+4 : ('abP', (True, [0, 7, 3]))
+7 : ('abbP', (True, [4, 8, None]))
+8 : ('abbbP', (True, [7, 9, None]))
+9 : ('aabP', (True, [8, 0, None]))
+11 : ('abP', (True, [0, 7, None]))
+12 : ('abbP', (True, [4, 8, None]))
+13 : ('abbbP', (True, [7, 9, None]))
+14 : ('aabP', (True, [0, 17, 8]))
+17 : ('aabbP', (True, [9, 18, None]))
+18 : ('aabbbP', (True, [17, 1, None]))
+19 : ('bP', (True, [18, 0, None]))
+Merging Table: 
+{10: 0, 11: 4, 12: 7, 13: 8, 14: 9, 19: 1}
+(True, [(0, 0), (7, 7), (3, 3)])
+combined_merging_table: {19: 1, 10: 0, 11: 4, 12: 7, 13: 8, 14: 9}
+merging 12 into 7
+with
+Graph: 
+0 : ('P', (True, [1, 9, 4]))
+1 : ('bP', (True, [0, 2, None]))
+2 : ('bbP', (True, [1, 3, None]))
+3 : ('bbbP', (True, [2, 4, None]))
+4 : ('abP', (True, [0, 7, 3]))
+7 : ('abbP', (True, [4, 8, None]))
+8 : ('abbbP', (True, [7, 9, None]))
+9 : ('aabP', (True, [8, 0, None]))
+12 : ('abbP', (True, [4, 8, None]))
+13 : ('abbbP', (True, [7, 9, None]))
+14 : ('aabP', (True, [0, 17, 8]))
+17 : ('aabbP', (True, [9, 18, None]))
+18 : ('aabbbP', (True, [17, 1, None]))
+19 : ('bP', (True, [18, 0, None]))
+Merging Table: 
+{10: 0, 11: 4, 12: 7, 13: 8, 14: 9, 19: 1}
+(True, [(8, 8), (None, None), (4, 4)])
+combined_merging_table: {19: 1, 10: 0, 11: 4, 12: 7, 13: 8, 14: 9}
+merging 13 into 8
+with
+Graph: 
+0 : ('P', (True, [1, 9, 4]))
+1 : ('bP', (True, [0, 2, None]))
+2 : ('bbP', (True, [1, 3, None]))
+3 : ('bbbP', (True, [2, 4, None]))
+4 : ('abP', (True, [0, 7, 3]))
+7 : ('abbP', (True, [8, None, 4]))
+8 : ('abbbP', (True, [7, 9, None]))
+9 : ('aabP', (True, [8, 0, None]))
+13 : ('abbbP', (True, [7, 9, None]))
+14 : ('aabP', (True, [0, 17, 8]))
+17 : ('aabbP', (True, [9, 18, None]))
+18 : ('aabbbP', (True, [17, 1, None]))
+19 : ('bP', (True, [18, 0, None]))
+Merging Table: 
+{10: 0, 11: 4, 12: 7, 13: 8, 14: 9, 19: 1}
+(True, [(9, 9), (None, None), (7, 7)])
+combined_merging_table: {19: 1, 10: 0, 11: 4, 12: 7, 13: 8, 14: 9}
+merging 14 into 9
+with
+Graph: 
+0 : ('P', (True, [1, 9, 4]))
+1 : ('bP', (True, [0, 2, None]))
+2 : ('bbP', (True, [1, 3, None]))
+3 : ('bbbP', (True, [2, 4, None]))
+4 : ('abP', (True, [0, 7, 3]))
+7 : ('abbP', (True, [8, None, 4]))
+8 : ('abbbP', (True, [9, None, 7]))
+9 : ('aabP', (True, [8, 0, None]))
+14 : ('aabP', (True, [0, 17, 8]))
+17 : ('aabbP', (True, [9, 18, None]))
+18 : ('aabbbP', (True, [17, 1, None]))
+19 : ('bP', (True, [18, 0, None]))
+Merging Table: 
+{10: 0, 11: 4, 12: 7, 13: 8, 14: 9, 19: 1}
+(True, [(8, 8), (0, 0), (17, 17)])
+combined_merging_table: {19: 1, 10: 0, 11: 4, 12: 7, 13: 8, 14: 9}
+merging 19 into 1
+with
+Graph: 
+0 : ('P', (True, [1, 9, 4]))
+1 : ('bP', (True, [0, 2, None]))
+2 : ('bbP', (True, [1, 3, None]))
+3 : ('bbbP', (True, [2, 4, None]))
+4 : ('abP', (True, [0, 7, 3]))
+7 : ('abbP', (True, [8, None, 4]))
+8 : ('abbbP', (True, [9, None, 7]))
+9 : ('aabP', (True, [8, 0, 17]))
+17 : ('aabbP', (True, [9, 18, None]))
+18 : ('aabbbP', (True, [17, 1, None]))
+19 : ('bP', (True, [18, 0, None]))
+Merging Table: 
+{10: 0, 11: 4, 12: 7, 13: 8, 14: 9, 19: 1}
+(True, [(0, 0), (2, 2), (18, 18)])
+combined_merging_table: {19: 1, 10: 0, 11: 4, 12: 7, 13: 8, 14: 9}
+Result graph: 
+0 : ('P', (True, [1, 9, 4]))
+1 : ('bP', (True, [0, 2, 18]))
+2 : ('bbP', (True, [1, 3, None]))
+3 : ('bbbP', (True, [2, 4, None]))
+4 : ('abP', (True, [0, 7, 3]))
+7 : ('abbP', (True, [8, None, 4]))
+8 : ('abbbP', (True, [9, None, 7]))
+9 : ('aabP', (True, [8, 0, 17]))
+17 : ('aabbP', (True, [9, 18, None]))
+18 : ('aabbbP', (True, [17, 1, None]))
+Applying a
+Duplicated graph: 
+0 : ('P', (True, [1, 9, 4]))
+1 : ('bP', (True, [0, 2, 18]))
+2 : ('bbP', (True, [1, 3, None]))
+3 : ('bbbP', (True, [2, 4, None]))
+4 : ('abP', (True, [0, 7, 3]))
+37 : ('aaabbbP', (True, [36, 20, None]))
+7 : ('abbP', (True, [8, None, 4]))
+8 : ('abbbP', (True, [9, None, 7]))
+9 : ('aabP', (True, [8, 0, 17]))
+17 : ('aabbP', (True, [9, 18, None]))
+18 : ('aabbbP', (True, [17, 1, None]))
+19 : ('aP', (True, [20, 28, 23]))
+20 : ('abP', (True, [19, 21, 37]))
+21 : ('abbP', (True, [20, 22, None]))
+22 : ('abbbP', (True, [21, 23, None]))
+23 : ('aabP', (True, [19, 26, 22]))
+36 : ('aaabbP', (True, [28, 37, None]))
+26 : ('aabbP', (True, [27, None, 23]))
+27 : ('aabbbP', (True, [28, None, 26]))
+28 : ('aaabP', (True, [27, 19, 36]))
+Reducing 37 : aaabbbP into bbbP
+Reducing 19 : aP into P
+Reducing 36 : aaabbP into bbP
+Reducing 28 : aaabP into bP
+Reduced graph: 
+0 : ('P', (True, [1, 9, 4]))
+1 : ('bP', (True, [0, 2, 18]))
+2 : ('bbP', (True, [1, 3, None]))
+3 : ('bbbP', (True, [2, 4, None]))
+4 : ('abP', (True, [0, 7, 3]))
+37 : ('bbbP', (True, [36, 20, None]))
+7 : ('abbP', (True, [8, None, 4]))
+8 : ('abbbP', (True, [9, None, 7]))
+9 : ('aabP', (True, [8, 0, 17]))
+17 : ('aabbP', (True, [9, 18, None]))
+18 : ('aabbbP', (True, [17, 1, None]))
+19 : ('P', (True, [20, 28, 23]))
+20 : ('abP', (True, [19, 21, 37]))
+21 : ('abbP', (True, [20, 22, None]))
+22 : ('abbbP', (True, [21, 23, None]))
+23 : ('aabP', (True, [19, 26, 22]))
+36 : ('bbP', (True, [28, 37, None]))
+26 : ('aabbP', (True, [27, None, 23]))
+27 : ('aabbbP', (True, [28, None, 26]))
+28 : ('bP', (True, [27, 19, 36]))
+Merging the following: {36: 2, 37: 3, 19: 0, 20: 4, 21: 7, 22: 8, 23: 9, 26: 17, 27: 18, 28: 1}
+merging 36 into 2
+with
+Graph: 
+0 : ('P', (True, [1, 9, 4]))
+1 : ('bP', (True, [0, 2, 18]))
+2 : ('bbP', (True, [1, 3, None]))
+3 : ('bbbP', (True, [2, 4, None]))
+4 : ('abP', (True, [0, 7, 3]))
+37 : ('bbbP', (True, [36, 20, None]))
+7 : ('abbP', (True, [8, None, 4]))
+8 : ('abbbP', (True, [9, None, 7]))
+9 : ('aabP', (True, [8, 0, 17]))
+17 : ('aabbP', (True, [9, 18, None]))
+18 : ('aabbbP', (True, [17, 1, None]))
+19 : ('P', (True, [20, 28, 23]))
+20 : ('abP', (True, [19, 21, 37]))
+21 : ('abbP', (True, [20, 22, None]))
+22 : ('abbbP', (True, [21, 23, None]))
+23 : ('aabP', (True, [19, 26, 22]))
+36 : ('bbP', (True, [28, 37, None]))
+26 : ('aabbP', (True, [27, None, 23]))
+27 : ('aabbbP', (True, [28, None, 26]))
+28 : ('bP', (True, [27, 19, 36]))
+Merging Table: 
+{36: 2, 37: 3, 19: 0, 20: 4, 21: 7, 22: 8, 23: 9, 26: 17, 27: 18, 28: 1}
+(True, [(1, 1), (3, 3), (None, None)])
+combined_merging_table: {36: 2, 37: 3, 19: 0, 20: 4, 21: 7, 22: 8, 23: 9, 26: 17, 27: 18, 28: 1}
+merging 37 into 3
+with
+Graph: 
+0 : ('P', (True, [1, 9, 4]))
+1 : ('bP', (True, [0, 2, 18]))
+2 : ('bbP', (True, [1, 3, None]))
+3 : ('bbbP', (True, [2, 4, None]))
+4 : ('abP', (True, [0, 7, 3]))
+37 : ('bbbP', (True, [2, 4, None]))
+7 : ('abbP', (True, [8, None, 4]))
+8 : ('abbbP', (True, [9, None, 7]))
+9 : ('aabP', (True, [8, 0, 17]))
+17 : ('aabbP', (True, [9, 18, None]))
+18 : ('aabbbP', (True, [17, 1, None]))
+19 : ('P', (True, [4, 1, 9]))
+20 : ('abP', (True, [0, 7, 3]))
+21 : ('abbP', (True, [4, 8, None]))
+22 : ('abbbP', (True, [7, 9, None]))
+23 : ('aabP', (True, [0, 17, 8]))
+26 : ('aabbP', (True, [18, None, 9]))
+27 : ('aabbbP', (True, [1, None, 17]))
+28 : ('bP', (True, [18, 0, 2]))
+Merging Table: 
+{36: 2, 37: 3, 19: 0, 20: 4, 21: 7, 22: 8, 23: 9, 26: 17, 27: 18, 28: 1}
+(True, [(2, 2), (4, 4), (None, None)])
+combined_merging_table: {36: 2, 37: 3, 19: 0, 20: 4, 21: 7, 22: 8, 23: 9, 26: 17, 27: 18, 28: 1}
+merging 19 into 0
+with
+Graph: 
+0 : ('P', (True, [1, 9, 4]))
+1 : ('bP', (True, [0, 2, 18]))
+2 : ('bbP', (True, [1, 3, None]))
+3 : ('bbbP', (True, [2, 4, None]))
+4 : ('abP', (True, [0, 7, 3]))
+7 : ('abbP', (True, [8, None, 4]))
+8 : ('abbbP', (True, [9, None, 7]))
+9 : ('aabP', (True, [8, 0, 17]))
+17 : ('aabbP', (True, [9, 18, None]))
+18 : ('aabbbP', (True, [17, 1, None]))
+19 : ('P', (True, [4, 1, 9]))
+20 : ('abP', (True, [0, 7, 3]))
+21 : ('abbP', (True, [4, 8, None]))
+22 : ('abbbP', (True, [7, 9, None]))
+23 : ('aabP', (True, [0, 17, 8]))
+26 : ('aabbP', (True, [18, None, 9]))
+27 : ('aabbbP', (True, [1, None, 17]))
+28 : ('bP', (True, [18, 0, 2]))
+Merging Table: 
+{36: 2, 37: 3, 19: 0, 20: 4, 21: 7, 22: 8, 23: 9, 26: 17, 27: 18, 28: 1}
+(True, [(1, 1), (9, 9), (4, 4)])
+combined_merging_table: {36: 2, 37: 3, 19: 0, 20: 4, 21: 7, 22: 8, 23: 9, 26: 17, 27: 18, 28: 1}
+merging 20 into 4
+with
+Graph: 
+0 : ('P', (True, [1, 9, 4]))
+1 : ('bP', (True, [0, 2, 18]))
+2 : ('bbP', (True, [1, 3, None]))
+3 : ('bbbP', (True, [2, 4, None]))
+4 : ('abP', (True, [0, 7, 3]))
+7 : ('abbP', (True, [8, None, 4]))
+8 : ('abbbP', (True, [9, None, 7]))
+9 : ('aabP', (True, [8, 0, 17]))
+17 : ('aabbP', (True, [9, 18, None]))
+18 : ('aabbbP', (True, [17, 1, None]))
+20 : ('abP', (True, [0, 7, 3]))
+21 : ('abbP', (True, [4, 8, None]))
+22 : ('abbbP', (True, [7, 9, None]))
+23 : ('aabP', (True, [0, 17, 8]))
+26 : ('aabbP', (True, [18, None, 9]))
+27 : ('aabbbP', (True, [1, None, 17]))
+28 : ('bP', (True, [18, 0, 2]))
+Merging Table: 
+{36: 2, 37: 3, 19: 0, 20: 4, 21: 7, 22: 8, 23: 9, 26: 17, 27: 18, 28: 1}
+(True, [(0, 0), (7, 7), (3, 3)])
+combined_merging_table: {36: 2, 37: 3, 19: 0, 20: 4, 21: 7, 22: 8, 23: 9, 26: 17, 27: 18, 28: 1}
+merging 21 into 7
+with
+Graph: 
+0 : ('P', (True, [1, 9, 4]))
+1 : ('bP', (True, [0, 2, 18]))
+2 : ('bbP', (True, [1, 3, None]))
+3 : ('bbbP', (True, [2, 4, None]))
+4 : ('abP', (True, [0, 7, 3]))
+7 : ('abbP', (True, [8, None, 4]))
+8 : ('abbbP', (True, [9, None, 7]))
+9 : ('aabP', (True, [8, 0, 17]))
+17 : ('aabbP', (True, [9, 18, None]))
+18 : ('aabbbP', (True, [17, 1, None]))
+21 : ('abbP', (True, [4, 8, None]))
+22 : ('abbbP', (True, [7, 9, None]))
+23 : ('aabP', (True, [0, 17, 8]))
+26 : ('aabbP', (True, [18, None, 9]))
+27 : ('aabbbP', (True, [1, None, 17]))
+28 : ('bP', (True, [18, 0, 2]))
+Merging Table: 
+{36: 2, 37: 3, 19: 0, 20: 4, 21: 7, 22: 8, 23: 9, 26: 17, 27: 18, 28: 1}
+(True, [(8, 8), (None, None), (4, 4)])
+combined_merging_table: {36: 2, 37: 3, 19: 0, 20: 4, 21: 7, 22: 8, 23: 9, 26: 17, 27: 18, 28: 1}
+merging 22 into 8
+with
+Graph: 
+0 : ('P', (True, [1, 9, 4]))
+1 : ('bP', (True, [0, 2, 18]))
+2 : ('bbP', (True, [1, 3, None]))
+3 : ('bbbP', (True, [2, 4, None]))
+4 : ('abP', (True, [0, 7, 3]))
+7 : ('abbP', (True, [8, None, 4]))
+8 : ('abbbP', (True, [9, None, 7]))
+9 : ('aabP', (True, [8, 0, 17]))
+17 : ('aabbP', (True, [9, 18, None]))
+18 : ('aabbbP', (True, [17, 1, None]))
+22 : ('abbbP', (True, [7, 9, None]))
+23 : ('aabP', (True, [0, 17, 8]))
+26 : ('aabbP', (True, [18, None, 9]))
+27 : ('aabbbP', (True, [1, None, 17]))
+28 : ('bP', (True, [18, 0, 2]))
+Merging Table: 
+{36: 2, 37: 3, 19: 0, 20: 4, 21: 7, 22: 8, 23: 9, 26: 17, 27: 18, 28: 1}
+(True, [(9, 9), (None, None), (7, 7)])
+combined_merging_table: {36: 2, 37: 3, 19: 0, 20: 4, 21: 7, 22: 8, 23: 9, 26: 17, 27: 18, 28: 1}
+merging 23 into 9
+with
+Graph: 
+0 : ('P', (True, [1, 9, 4]))
+1 : ('bP', (True, [0, 2, 18]))
+2 : ('bbP', (True, [1, 3, None]))
+3 : ('bbbP', (True, [2, 4, None]))
+4 : ('abP', (True, [0, 7, 3]))
+7 : ('abbP', (True, [8, None, 4]))
+8 : ('abbbP', (True, [9, None, 7]))
+9 : ('aabP', (True, [8, 0, 17]))
+17 : ('aabbP', (True, [9, 18, None]))
+18 : ('aabbbP', (True, [17, 1, None]))
+23 : ('aabP', (True, [0, 17, 8]))
+26 : ('aabbP', (True, [18, None, 9]))
+27 : ('aabbbP', (True, [1, None, 17]))
+28 : ('bP', (True, [18, 0, 2]))
+Merging Table: 
+{36: 2, 37: 3, 19: 0, 20: 4, 21: 7, 22: 8, 23: 9, 26: 17, 27: 18, 28: 1}
+(True, [(8, 8), (0, 0), (17, 17)])
+combined_merging_table: {36: 2, 37: 3, 19: 0, 20: 4, 21: 7, 22: 8, 23: 9, 26: 17, 27: 18, 28: 1}
+merging 26 into 17
+with
+Graph: 
+0 : ('P', (True, [1, 9, 4]))
+1 : ('bP', (True, [0, 2, 18]))
+2 : ('bbP', (True, [1, 3, None]))
+3 : ('bbbP', (True, [2, 4, None]))
+4 : ('abP', (True, [0, 7, 3]))
+7 : ('abbP', (True, [8, None, 4]))
+8 : ('abbbP', (True, [9, None, 7]))
+9 : ('aabP', (True, [8, 0, 17]))
+17 : ('aabbP', (True, [9, 18, None]))
+18 : ('aabbbP', (True, [17, 1, None]))
+26 : ('aabbP', (True, [18, None, 9]))
+27 : ('aabbbP', (True, [1, None, 17]))
+28 : ('bP', (True, [18, 0, 2]))
+Merging Table: 
+{36: 2, 37: 3, 19: 0, 20: 4, 21: 7, 22: 8, 23: 9, 26: 17, 27: 18, 28: 1}
+(True, [(9, 9), (18, 18), (None, None)])
+combined_merging_table: {36: 2, 37: 3, 19: 0, 20: 4, 21: 7, 22: 8, 23: 9, 26: 17, 27: 18, 28: 1}
+merging 27 into 18
+with
+Graph: 
+0 : ('P', (True, [1, 9, 4]))
+1 : ('bP', (True, [0, 2, 18]))
+2 : ('bbP', (True, [1, 3, None]))
+3 : ('bbbP', (True, [2, 4, None]))
+4 : ('abP', (True, [0, 7, 3]))
+7 : ('abbP', (True, [8, None, 4]))
+8 : ('abbbP', (True, [9, None, 7]))
+9 : ('aabP', (True, [8, 0, 17]))
+17 : ('aabbP', (True, [9, 18, None]))
+18 : ('aabbbP', (True, [17, 1, None]))
+27 : ('aabbbP', (True, [1, None, 17]))
+28 : ('bP', (True, [18, 0, 2]))
+Merging Table: 
+{36: 2, 37: 3, 19: 0, 20: 4, 21: 7, 22: 8, 23: 9, 26: 17, 27: 18, 28: 1}
+(True, [(17, 17), (1, 1), (None, None)])
+combined_merging_table: {36: 2, 37: 3, 19: 0, 20: 4, 21: 7, 22: 8, 23: 9, 26: 17, 27: 18, 28: 1}
+merging 28 into 1
+with
+Graph: 
+0 : ('P', (True, [1, 9, 4]))
+1 : ('bP', (True, [0, 2, 18]))
+2 : ('bbP', (True, [1, 3, None]))
+3 : ('bbbP', (True, [2, 4, None]))
+4 : ('abP', (True, [0, 7, 3]))
+7 : ('abbP', (True, [8, None, 4]))
+8 : ('abbbP', (True, [9, None, 7]))
+9 : ('aabP', (True, [8, 0, 17]))
+17 : ('aabbP', (True, [9, 18, None]))
+18 : ('aabbbP', (True, [17, 1, None]))
+28 : ('bP', (True, [18, 0, 2]))
+Merging Table: 
+{36: 2, 37: 3, 19: 0, 20: 4, 21: 7, 22: 8, 23: 9, 26: 17, 27: 18, 28: 1}
+(True, [(0, 0), (2, 2), (18, 18)])
+combined_merging_table: {36: 2, 37: 3, 19: 0, 20: 4, 21: 7, 22: 8, 23: 9, 26: 17, 27: 18, 28: 1}
+Result graph: 
+0 : ('P', (True, [1, 9, 4]))
+1 : ('bP', (True, [0, 2, 18]))
+2 : ('bbP', (True, [1, 3, None]))
+3 : ('bbbP', (True, [2, 4, None]))
+4 : ('abP', (True, [0, 7, 3]))
+7 : ('abbP', (True, [8, None, 4]))
+8 : ('abbbP', (True, [9, None, 7]))
+9 : ('aabP', (True, [8, 0, 17]))
+17 : ('aabbP', (True, [9, 18, None]))
+18 : ('aabbbP', (True, [17, 1, None]))
+Applying b
+Duplicated graph: 
+0 : ('P', (True, [1, 9, 4]))
+1 : ('bP', (True, [0, 2, 18]))
+2 : ('bbP', (True, [1, 3, None]))
+3 : ('bbbP', (True, [2, 4, None]))
+4 : ('abP', (True, [0, 7, 3]))
+37 : ('baabbbP', (True, [36, 20, None]))
+7 : ('abbP', (True, [8, None, 4]))
+8 : ('abbbP', (True, [9, None, 7]))
+9 : ('aabP', (True, [8, 0, 17]))
+17 : ('aabbP', (True, [9, 18, None]))
+18 : ('aabbbP', (True, [17, 1, None]))
+19 : ('bP', (True, [20, 28, 23]))
+20 : ('bbP', (True, [19, 21, 37]))
+21 : ('bbbP', (True, [20, 22, None]))
+22 : ('bbbbP', (True, [21, 23, None]))
+23 : ('babP', (True, [19, 26, 22]))
+36 : ('baabbP', (True, [28, 37, None]))
+26 : ('babbP', (True, [27, None, 23]))
+27 : ('babbbP', (True, [28, None, 26]))
+28 : ('baabP', (True, [27, 19, 36]))
+Reducing 22 : bbbbP into abP
+Reduced graph: 
+0 : ('P', (True, [1, 9, 4]))
+1 : ('bP', (True, [0, 2, 18]))
+2 : ('bbP', (True, [1, 3, None]))
+3 : ('bbbP', (True, [2, 4, None]))
+4 : ('abP', (True, [0, 7, 3]))
+37 : ('baabbbP', (True, [36, 20, None]))
+7 : ('abbP', (True, [8, None, 4]))
+8 : ('abbbP', (True, [9, None, 7]))
+9 : ('aabP', (True, [8, 0, 17]))
+17 : ('aabbP', (True, [9, 18, None]))
+18 : ('aabbbP', (True, [17, 1, None]))
+19 : ('bP', (True, [20, 28, 23]))
+20 : ('bbP', (True, [19, 21, 37]))
+21 : ('bbbP', (True, [20, 22, None]))
+22 : ('abP', (True, [21, 23, None]))
+23 : ('babP', (True, [19, 26, 22]))
+36 : ('baabbP', (True, [28, 37, None]))
+26 : ('babbP', (True, [27, None, 23]))
+27 : ('babbbP', (True, [28, None, 26]))
+28 : ('baabP', (True, [27, 19, 36]))
+Merging the following: {19: 1, 20: 2, 21: 3, 22: 4}
+merging 19 into 1
+with
+Graph: 
+0 : ('P', (True, [1, 9, 4]))
+1 : ('bP', (True, [0, 2, 18]))
+2 : ('bbP', (True, [1, 3, None]))
+3 : ('bbbP', (True, [2, 4, None]))
+4 : ('abP', (True, [0, 7, 3]))
+37 : ('baabbbP', (True, [36, 20, None]))
+7 : ('abbP', (True, [8, None, 4]))
+8 : ('abbbP', (True, [9, None, 7]))
+9 : ('aabP', (True, [8, 0, 17]))
+17 : ('aabbP', (True, [9, 18, None]))
+18 : ('aabbbP', (True, [17, 1, None]))
+19 : ('bP', (True, [20, 28, 23]))
+20 : ('bbP', (True, [19, 21, 37]))
+21 : ('bbbP', (True, [20, 22, None]))
+22 : ('abP', (True, [21, 23, None]))
+23 : ('babP', (True, [19, 26, 22]))
+36 : ('baabbP', (True, [28, 37, None]))
+26 : ('babbP', (True, [27, None, 23]))
+27 : ('babbbP', (True, [28, None, 26]))
+28 : ('baabP', (True, [27, 19, 36]))
+Merging Table: 
+{19: 1, 20: 2, 21: 3, 22: 4}
+(True, [(2, 2), (28, 18), (23, 0)])
+merging 28 into 18
+with
+Graph: 
+0 : ('P', (True, [1, 9, 4]))
+1 : ('bP', (True, [0, 2, 18]))
+2 : ('bbP', (True, [1, 3, None]))
+3 : ('bbbP', (True, [2, 4, None]))
+4 : ('abP', (True, [0, 7, 3]))
+37 : ('baabbbP', (True, [36, 20, None]))
+7 : ('abbP', (True, [8, None, 4]))
+8 : ('abbbP', (True, [9, None, 7]))
+9 : ('aabP', (True, [8, 0, 17]))
+17 : ('aabbP', (True, [9, 18, None]))
+18 : ('aabbbP', (True, [17, 1, None]))
+19 : ('bP', (True, [20, 28, 23]))
+20 : ('bbP', (True, [19, 21, 37]))
+21 : ('bbbP', (True, [20, 22, None]))
+22 : ('abP', (True, [21, 23, None]))
+23 : ('babP', (True, [19, 26, 22]))
+36 : ('baabbP', (True, [28, 37, None]))
+26 : ('babbP', (True, [27, None, 23]))
+27 : ('babbbP', (True, [28, None, 26]))
+28 : ('baabP', (True, [27, 19, 36]))
+Merging Table: 
+{19: 1, 20: 2, 21: 3, 22: 4, 23: 0, 28: 18}
+(True, [(1, 1), (36, 36), (27, 17)])
+merging 27 into 17
+with
+Graph: 
+0 : ('P', (True, [1, 9, 4]))
+1 : ('bP', (True, [0, 2, 18]))
+2 : ('bbP', (True, [1, 3, None]))
+3 : ('bbbP', (True, [2, 4, None]))
+4 : ('abP', (True, [0, 7, 3]))
+37 : ('baabbbP', (True, [36, 20, None]))
+7 : ('abbP', (True, [8, None, 4]))
+8 : ('abbbP', (True, [9, None, 7]))
+9 : ('aabP', (True, [8, 0, 17]))
+17 : ('aabbP', (True, [9, 18, None]))
+18 : ('aabbbP', (True, [17, 1, None]))
+19 : ('bP', (True, [20, 28, 23]))
+20 : ('bbP', (True, [19, 21, 37]))
+21 : ('bbbP', (True, [20, 22, None]))
+22 : ('abP', (True, [21, 23, None]))
+23 : ('babP', (True, [19, 26, 22]))
+36 : ('baabbP', (True, [28, 37, None]))
+26 : ('babbP', (True, [27, None, 23]))
+27 : ('babbbP', (True, [28, None, 26]))
+28 : ('baabP', (True, [27, 19, 36]))
+Merging Table: 
+{19: 1, 20: 2, 21: 3, 22: 4, 23: 0, 27: 17, 28: 18}
+(True, [(18, 18), (None, None), (26, 9)])
+merging 26 into 9
+with
+Graph: 
+0 : ('P', (True, [1, 9, 4]))
+1 : ('bP', (True, [0, 2, 18]))
+2 : ('bbP', (True, [1, 3, None]))
+3 : ('bbbP', (True, [2, 4, None]))
+4 : ('abP', (True, [0, 7, 3]))
+37 : ('baabbbP', (True, [36, 20, None]))
+7 : ('abbP', (True, [8, None, 4]))
+8 : ('abbbP', (True, [9, None, 7]))
+9 : ('aabP', (True, [8, 0, 17]))
+17 : ('aabbP', (True, [9, 18, None]))
+18 : ('aabbbP', (True, [17, 1, None]))
+19 : ('bP', (True, [20, 28, 23]))
+20 : ('bbP', (True, [19, 21, 37]))
+21 : ('bbbP', (True, [20, 22, None]))
+22 : ('abP', (True, [21, 23, None]))
+23 : ('babP', (True, [19, 26, 22]))
+36 : ('baabbP', (True, [28, 37, None]))
+26 : ('babbP', (True, [27, None, 23]))
+27 : ('babbbP', (True, [28, None, 26]))
+28 : ('baabP', (True, [27, 19, 36]))
+Merging Table: 
+{19: 1, 20: 2, 21: 3, 22: 4, 23: 0, 26: 9, 27: 17, 28: 18}
+(True, [(0, 0), (17, 17), (8, 8)])
+combined_merging_table: {19: 1, 20: 2, 21: 3, 22: 4, 23: 0, 26: 9, 27: 17, 28: 18}
+combined_merging_table: {19: 1, 20: 2, 21: 3, 22: 4, 23: 0, 26: 9, 27: 17, 28: 18}
+combined_merging_table: {19: 1, 20: 2, 21: 3, 22: 4, 23: 0, 27: 17, 28: 18}
+merging 23 into 0
+with
+Graph: 
+0 : ('P', (True, [1, 9, 4]))
+1 : ('bP', (True, [0, 2, 18]))
+2 : ('bbP', (True, [1, 3, None]))
+3 : ('bbbP', (True, [2, 4, None]))
+4 : ('abP', (True, [0, 7, 3]))
+37 : ('baabbbP', (True, [36, 20, None]))
+7 : ('abbP', (True, [8, None, 4]))
+8 : ('abbbP', (True, [9, None, 7]))
+9 : ('aabP', (True, [8, 0, 17]))
+17 : ('aabbP', (True, [9, 18, None]))
+18 : ('aabbbP', (True, [17, 1, None]))
+19 : ('bP', (True, [20, 28, 23]))
+20 : ('bbP', (True, [19, 21, 37]))
+21 : ('bbbP', (True, [20, 22, None]))
+22 : ('abP', (True, [21, 23, None]))
+23 : ('babP', (True, [19, 26, 22]))
+36 : ('baabbP', (True, [28, 37, None]))
+26 : ('babbP', (True, [27, None, 23]))
+27 : ('babbbP', (True, [28, None, 26]))
+28 : ('baabP', (True, [27, 19, 36]))
+Merging Table: 
+{19: 1, 20: 2, 21: 3, 22: 4, 23: 0, 28: 18}
+(True, [(1, 1), (26, 9), (4, 4)])
+merging 26 into 9
+with
+Graph: 
+0 : ('P', (True, [1, 9, 4]))
+1 : ('bP', (True, [0, 2, 18]))
+2 : ('bbP', (True, [1, 3, None]))
+3 : ('bbbP', (True, [2, 4, None]))
+4 : ('abP', (True, [0, 7, 3]))
+37 : ('baabbbP', (True, [36, 20, None]))
+7 : ('abbP', (True, [8, None, 4]))
+8 : ('abbbP', (True, [9, None, 7]))
+9 : ('aabP', (True, [8, 0, 17]))
+17 : ('aabbP', (True, [9, 18, None]))
+18 : ('aabbbP', (True, [17, 1, None]))
+19 : ('bP', (True, [20, 28, 23]))
+20 : ('bbP', (True, [19, 21, 37]))
+21 : ('bbbP', (True, [20, 22, None]))
+22 : ('abP', (True, [21, 23, None]))
+23 : ('babP', (True, [19, 26, 22]))
+36 : ('baabbP', (True, [28, 37, None]))
+26 : ('babbP', (True, [27, None, 23]))
+27 : ('babbbP', (True, [28, None, 26]))
+28 : ('baabP', (True, [27, 19, 36]))
+Merging Table: 
+{19: 1, 20: 2, 21: 3, 22: 4, 23: 0, 26: 9, 28: 18}
+(True, [(0, 0), (27, 17), (8, 8)])
+merging 27 into 17
+with
+Graph: 
+0 : ('P', (True, [1, 9, 4]))
+1 : ('bP', (True, [0, 2, 18]))
+2 : ('bbP', (True, [1, 3, None]))
+3 : ('bbbP', (True, [2, 4, None]))
+4 : ('abP', (True, [0, 7, 3]))
+37 : ('baabbbP', (True, [36, 20, None]))
+7 : ('abbP', (True, [8, None, 4]))
+8 : ('abbbP', (True, [9, None, 7]))
+9 : ('aabP', (True, [8, 0, 17]))
+17 : ('aabbP', (True, [9, 18, None]))
+18 : ('aabbbP', (True, [17, 1, None]))
+19 : ('bP', (True, [20, 28, 23]))
+20 : ('bbP', (True, [19, 21, 37]))
+21 : ('bbbP', (True, [20, 22, None]))
+22 : ('abP', (True, [21, 23, None]))
+23 : ('babP', (True, [19, 26, 22]))
+36 : ('baabbP', (True, [28, 37, None]))
+26 : ('babbP', (True, [27, None, 23]))
+27 : ('babbbP', (True, [28, None, 26]))
+28 : ('baabP', (True, [27, 19, 36]))
+Merging Table: 
+{19: 1, 20: 2, 21: 3, 22: 4, 23: 0, 26: 9, 27: 17, 28: 18}
+(True, [(9, 9), (18, 18), (None, None)])
+combined_merging_table: {19: 1, 20: 2, 21: 3, 22: 4, 23: 0, 26: 9, 27: 17, 28: 18}
+combined_merging_table: {19: 1, 20: 2, 21: 3, 22: 4, 23: 0, 26: 9, 27: 17, 28: 18}
+combined_merging_table: {19: 1, 20: 2, 21: 3, 22: 4, 23: 0, 26: 9, 28: 18}
+combined_merging_table: {19: 1, 20: 2, 21: 3, 22: 4, 23: 0, 28: 18}
+merging 20 into 2
+with
+Graph: 
+0 : ('P', (True, [1, 9, 4]))
+1 : ('bP', (True, [0, 2, 18]))
+2 : ('bbP', (True, [1, 3, None]))
+3 : ('bbbP', (True, [2, 4, None]))
+4 : ('abP', (True, [0, 7, 3]))
+37 : ('baabbbP', (True, [36, 2, None]))
+7 : ('abbP', (True, [8, None, 4]))
+8 : ('abbbP', (True, [9, None, 7]))
+9 : ('aabP', (True, [8, 0, 17]))
+17 : ('aabbP', (True, [9, 18, None]))
+18 : ('aabbbP', (True, [17, 1, None]))
+20 : ('bbP', (True, [1, 3, 37]))
+21 : ('bbbP', (True, [2, 4, None]))
+22 : ('abP', (True, [3, 0, None]))
+36 : ('baabbP', (True, [18, 37, None]))
+28 : ('baabP', (True, [17, 1, 36]))
+Merging Table: 
+{19: 1, 20: 2, 21: 3, 22: 4}
+(True, [(1, 1), (3, 3), (37, 37)])
+combined_merging_table: {19: 1, 20: 2, 21: 3, 22: 4}
+merging 21 into 3
+with
+Graph: 
+0 : ('P', (True, [1, 9, 4]))
+1 : ('bP', (True, [0, 2, 18]))
+2 : ('bbP', (True, [1, 3, 37]))
+3 : ('bbbP', (True, [2, 4, None]))
+4 : ('abP', (True, [0, 7, 3]))
+37 : ('baabbbP', (True, [36, 2, None]))
+7 : ('abbP', (True, [8, None, 4]))
+8 : ('abbbP', (True, [9, None, 7]))
+9 : ('aabP', (True, [8, 0, 17]))
+17 : ('aabbP', (True, [9, 18, None]))
+18 : ('aabbbP', (True, [17, 1, None]))
+21 : ('bbbP', (True, [2, 4, None]))
+22 : ('abP', (True, [3, 0, None]))
+36 : ('baabbP', (True, [18, 37, None]))
+28 : ('baabP', (True, [17, 1, 36]))
+Merging Table: 
+{19: 1, 20: 2, 21: 3, 22: 4}
+(True, [(2, 2), (4, 4), (None, None)])
+combined_merging_table: {19: 1, 20: 2, 21: 3, 22: 4}
+merging 22 into 4
+with
+Graph: 
+0 : ('P', (True, [1, 9, 4]))
+1 : ('bP', (True, [0, 2, 18]))
+2 : ('bbP', (True, [1, 3, 37]))
+3 : ('bbbP', (True, [2, 4, None]))
+4 : ('abP', (True, [0, 7, 3]))
+37 : ('baabbbP', (True, [36, 2, None]))
+7 : ('abbP', (True, [8, None, 4]))
+8 : ('abbbP', (True, [9, None, 7]))
+9 : ('aabP', (True, [8, 0, 17]))
+17 : ('aabbP', (True, [9, 18, None]))
+18 : ('aabbbP', (True, [17, 1, None]))
+22 : ('abP', (True, [3, 0, None]))
+36 : ('baabbP', (True, [18, 37, None]))
+28 : ('baabP', (True, [17, 1, 36]))
+Merging Table: 
+{19: 1, 20: 2, 21: 3, 22: 4}
+(True, [(0, 0), (7, 7), (3, 3)])
+combined_merging_table: {19: 1, 20: 2, 21: 3, 22: 4}
+Result graph: 
+0 : ('P', (True, [1, 9, 4]))
+1 : ('bP', (True, [0, 2, 18]))
+2 : ('bbP', (True, [1, 3, 37]))
+3 : ('bbbP', (True, [2, 4, None]))
+4 : ('abP', (True, [0, 7, 3]))
+37 : ('baabbbP', (True, [36, 2, None]))
+7 : ('abbP', (True, [8, None, 4]))
+8 : ('abbbP', (True, [9, None, 7]))
+9 : ('aabP', (True, [8, 0, 17]))
+17 : ('aabbP', (True, [9, 18, None]))
+18 : ('aabbbP', (True, [17, 1, None]))
+36 : ('baabbP', (True, [18, 37, None]))
+28 : ('baabP', (True, [17, 1, 36]))
+Applying b
+Duplicated graph: 
+0 : ('P', (True, [1, 9, 4]))
+1 : ('bP', (True, [0, 2, 18]))
+2 : ('bbP', (True, [1, 3, 37]))
+3 : ('bbbP', (True, [2, 4, None]))
+4 : ('abP', (True, [0, 7, 3]))
+7 : ('abbP', (True, [8, None, 4]))
+8 : ('abbbP', (True, [9, None, 7]))
+9 : ('aabP', (True, [8, 0, 17]))
+17 : ('aabbP', (True, [9, 18, None]))
+18 : ('aabbbP', (True, [17, 1, None]))
+28 : ('baabP', (True, [17, 1, 36]))
+36 : ('baabbP', (True, [18, 37, None]))
+37 : ('baabbbP', (True, [36, 2, None]))
+38 : ('bP', (True, [39, 47, 42]))
+39 : ('bbP', (True, [38, 40, 56]))
+40 : ('bbbP', (True, [39, 41, 75]))
+41 : ('bbbbP', (True, [40, 42, None]))
+42 : ('babP', (True, [38, 45, 41]))
+45 : ('babbP', (True, [46, None, 42]))
+46 : ('babbbP', (True, [47, None, 45]))
+47 : ('baabP', (True, [46, 38, 55]))
+55 : ('baabbP', (True, [47, 56, None]))
+56 : ('baabbbP', (True, [55, 39, None]))
+66 : ('bbaabP', (True, [55, 39, 74]))
+74 : ('bbaabbP', (True, [56, 75, None]))
+75 : ('bbaabbbP', (True, [74, 40, None]))
+Reducing 41 : bbbbP into abP
+Reduced graph: 
+0 : ('P', (True, [1, 9, 4]))
+1 : ('bP', (True, [0, 2, 18]))
+2 : ('bbP', (True, [1, 3, 37]))
+3 : ('bbbP', (True, [2, 4, None]))
+4 : ('abP', (True, [0, 7, 3]))
+7 : ('abbP', (True, [8, None, 4]))
+8 : ('abbbP', (True, [9, None, 7]))
+9 : ('aabP', (True, [8, 0, 17]))
+17 : ('aabbP', (True, [9, 18, None]))
+18 : ('aabbbP', (True, [17, 1, None]))
+28 : ('baabP', (True, [17, 1, 36]))
+36 : ('baabbP', (True, [18, 37, None]))
+37 : ('baabbbP', (True, [36, 2, None]))
+38 : ('bP', (True, [39, 47, 42]))
+39 : ('bbP', (True, [38, 40, 56]))
+40 : ('bbbP', (True, [39, 41, 75]))
+41 : ('abP', (True, [40, 42, None]))
+42 : ('babP', (True, [38, 45, 41]))
+45 : ('babbP', (True, [46, None, 42]))
+46 : ('babbbP', (True, [47, None, 45]))
+47 : ('baabP', (True, [46, 38, 55]))
+55 : ('baabbP', (True, [47, 56, None]))
+56 : ('baabbbP', (True, [55, 39, None]))
+66 : ('bbaabP', (True, [55, 39, 74]))
+74 : ('bbaabbP', (True, [56, 75, None]))
+75 : ('bbaabbbP', (True, [74, 40, None]))
+Merging the following: {38: 1, 39: 2, 40: 3, 41: 4, 47: 28, 55: 36, 56: 37}
+merging 38 into 1
+with
+Graph: 
+0 : ('P', (True, [1, 9, 4]))
+1 : ('bP', (True, [0, 2, 18]))
+2 : ('bbP', (True, [1, 3, 37]))
+3 : ('bbbP', (True, [2, 4, None]))
+4 : ('abP', (True, [0, 7, 3]))
+7 : ('abbP', (True, [8, None, 4]))
+8 : ('abbbP', (True, [9, None, 7]))
+9 : ('aabP', (True, [8, 0, 17]))
+17 : ('aabbP', (True, [9, 18, None]))
+18 : ('aabbbP', (True, [17, 1, None]))
+28 : ('baabP', (True, [17, 1, 36]))
+36 : ('baabbP', (True, [18, 37, None]))
+37 : ('baabbbP', (True, [36, 2, None]))
+38 : ('bP', (True, [39, 47, 42]))
+39 : ('bbP', (True, [38, 40, 56]))
+40 : ('bbbP', (True, [39, 41, 75]))
+41 : ('abP', (True, [40, 42, None]))
+42 : ('babP', (True, [38, 45, 41]))
+45 : ('babbP', (True, [46, None, 42]))
+46 : ('babbbP', (True, [47, None, 45]))
+47 : ('baabP', (True, [46, 38, 55]))
+55 : ('baabbP', (True, [47, 56, None]))
+56 : ('baabbbP', (True, [55, 39, None]))
+66 : ('bbaabP', (True, [55, 39, 74]))
+74 : ('bbaabbP', (True, [56, 75, None]))
+75 : ('bbaabbbP', (True, [74, 40, None]))
+Merging Table: 
+{38: 1, 39: 2, 40: 3, 41: 4, 47: 28, 55: 36, 56: 37}
+(True, [(2, 2), (28, 18), (42, 0)])
+merging 42 into 0
+with
+Graph: 
+0 : ('P', (True, [1, 9, 4]))
+1 : ('bP', (True, [0, 2, 18]))
+2 : ('bbP', (True, [1, 3, 37]))
+3 : ('bbbP', (True, [2, 4, None]))
+4 : ('abP', (True, [0, 7, 3]))
+7 : ('abbP', (True, [8, None, 4]))
+8 : ('abbbP', (True, [9, None, 7]))
+9 : ('aabP', (True, [8, 0, 17]))
+17 : ('aabbP', (True, [9, 18, None]))
+18 : ('aabbbP', (True, [17, 1, None]))
+28 : ('baabP', (True, [17, 1, 36]))
+36 : ('baabbP', (True, [18, 37, None]))
+37 : ('baabbbP', (True, [36, 2, None]))
+38 : ('bP', (True, [39, 47, 42]))
+39 : ('bbP', (True, [38, 40, 56]))
+40 : ('bbbP', (True, [39, 41, 75]))
+41 : ('abP', (True, [40, 42, None]))
+42 : ('babP', (True, [38, 45, 41]))
+45 : ('babbP', (True, [46, None, 42]))
+46 : ('babbbP', (True, [47, None, 45]))
+47 : ('baabP', (True, [46, 38, 55]))
+55 : ('baabbP', (True, [47, 56, None]))
+56 : ('baabbbP', (True, [55, 39, None]))
+66 : ('bbaabP', (True, [55, 39, 74]))
+74 : ('bbaabbP', (True, [56, 75, None]))
+75 : ('bbaabbbP', (True, [74, 40, None]))
+Merging Table: 
+{38: 1, 39: 2, 40: 3, 41: 4, 42: 0, 47: 28, 55: 36, 56: 37, 28: 18}
+(True, [(1, 1), (45, 9), (4, 4)])
+merging 45 into 9
+with
+Graph: 
+0 : ('P', (True, [1, 9, 4]))
+1 : ('bP', (True, [0, 2, 18]))
+2 : ('bbP', (True, [1, 3, 37]))
+3 : ('bbbP', (True, [2, 4, None]))
+4 : ('abP', (True, [0, 7, 3]))
+7 : ('abbP', (True, [8, None, 4]))
+8 : ('abbbP', (True, [9, None, 7]))
+9 : ('aabP', (True, [8, 0, 17]))
+17 : ('aabbP', (True, [9, 18, None]))
+18 : ('aabbbP', (True, [17, 1, None]))
+28 : ('baabP', (True, [17, 1, 36]))
+36 : ('baabbP', (True, [18, 37, None]))
+37 : ('baabbbP', (True, [36, 2, None]))
+38 : ('bP', (True, [39, 47, 42]))
+39 : ('bbP', (True, [38, 40, 56]))
+40 : ('bbbP', (True, [39, 41, 75]))
+41 : ('abP', (True, [40, 42, None]))
+42 : ('babP', (True, [38, 45, 41]))
+45 : ('babbP', (True, [46, None, 42]))
+46 : ('babbbP', (True, [47, None, 45]))
+47 : ('baabP', (True, [46, 38, 55]))
+55 : ('baabbP', (True, [47, 56, None]))
+56 : ('baabbbP', (True, [55, 39, None]))
+66 : ('bbaabP', (True, [55, 39, 74]))
+74 : ('bbaabbP', (True, [56, 75, None]))
+75 : ('bbaabbbP', (True, [74, 40, None]))
+Merging Table: 
+{38: 1, 39: 2, 40: 3, 41: 4, 42: 0, 45: 9, 47: 28, 55: 36, 56: 37, 28: 18}
+(True, [(0, 0), (46, 17), (8, 8)])
+merging 46 into 17
+with
+Graph: 
+0 : ('P', (True, [1, 9, 4]))
+1 : ('bP', (True, [0, 2, 18]))
+2 : ('bbP', (True, [1, 3, 37]))
+3 : ('bbbP', (True, [2, 4, None]))
+4 : ('abP', (True, [0, 7, 3]))
+7 : ('abbP', (True, [8, None, 4]))
+8 : ('abbbP', (True, [9, None, 7]))
+9 : ('aabP', (True, [8, 0, 17]))
+17 : ('aabbP', (True, [9, 18, None]))
+18 : ('aabbbP', (True, [17, 1, None]))
+28 : ('baabP', (True, [17, 1, 36]))
+36 : ('baabbP', (True, [18, 37, None]))
+37 : ('baabbbP', (True, [36, 2, None]))
+38 : ('bP', (True, [39, 47, 42]))
+39 : ('bbP', (True, [38, 40, 56]))
+40 : ('bbbP', (True, [39, 41, 75]))
+41 : ('abP', (True, [40, 42, None]))
+42 : ('babP', (True, [38, 45, 41]))
+45 : ('babbP', (True, [46, None, 42]))
+46 : ('babbbP', (True, [47, None, 45]))
+47 : ('baabP', (True, [46, 38, 55]))
+55 : ('baabbP', (True, [47, 56, None]))
+56 : ('baabbbP', (True, [55, 39, None]))
+66 : ('bbaabP', (True, [55, 39, 74]))
+74 : ('bbaabbP', (True, [56, 75, None]))
+75 : ('bbaabbbP', (True, [74, 40, None]))
+Merging Table: 
+{38: 1, 39: 2, 40: 3, 41: 4, 42: 0, 45: 9, 46: 17, 47: 28, 55: 36, 56: 37, 28: 18}
+(True, [(9, 9), (28, 18), (None, None)])
+merging 28 into 18
+with
+Graph: 
+0 : ('P', (True, [1, 9, 4]))
+1 : ('bP', (True, [0, 2, 18]))
+2 : ('bbP', (True, [1, 3, 37]))
+3 : ('bbbP', (True, [2, 4, None]))
+4 : ('abP', (True, [0, 7, 3]))
+7 : ('abbP', (True, [8, None, 4]))
+8 : ('abbbP', (True, [9, None, 7]))
+9 : ('aabP', (True, [8, 0, 17]))
+17 : ('aabbP', (True, [9, 18, None]))
+18 : ('aabbbP', (True, [17, 1, None]))
+28 : ('baabP', (True, [17, 1, 36]))
+36 : ('baabbP', (True, [18, 37, None]))
+37 : ('baabbbP', (True, [36, 2, None]))
+38 : ('bP', (True, [39, 47, 42]))
+39 : ('bbP', (True, [38, 40, 56]))
+40 : ('bbbP', (True, [39, 41, 75]))
+41 : ('abP', (True, [40, 42, None]))
+42 : ('babP', (True, [38, 45, 41]))
+45 : ('babbP', (True, [46, None, 42]))
+46 : ('babbbP', (True, [47, None, 45]))
+47 : ('baabP', (True, [46, 38, 55]))
+55 : ('baabbP', (True, [47, 56, None]))
+56 : ('baabbbP', (True, [55, 39, None]))
+66 : ('bbaabP', (True, [55, 39, 74]))
+74 : ('bbaabbP', (True, [56, 75, None]))
+75 : ('bbaabbbP', (True, [74, 40, None]))
+Merging Table: 
+{38: 1, 39: 2, 40: 3, 41: 4, 42: 0, 45: 9, 46: 17, 47: 28, 55: 36, 56: 37, 28: 18}
+(True, [(17, 17), (1, 1), (36, 36)])
+combined_merging_table: {38: 1, 39: 2, 40: 3, 41: 4, 42: 0, 45: 9, 46: 17, 47: 28, 55: 36, 56: 37, 28: 18}
+combined_merging_table: {38: 1, 39: 2, 40: 3, 41: 4, 42: 0, 45: 9, 46: 17, 47: 28, 55: 36, 56: 37, 28: 18}
+combined_merging_table: {38: 1, 39: 2, 40: 3, 41: 4, 42: 0, 45: 9, 46: 17, 47: 28, 55: 36, 56: 37, 28: 18}
+combined_merging_table: {38: 1, 39: 2, 40: 3, 41: 4, 42: 0, 45: 9, 47: 28, 55: 36, 56: 37, 28: 18}
+merging 28 into 18
+with
+Graph: 
+0 : ('P', (True, [1, 9, 4]))
+1 : ('bP', (True, [0, 2, 18]))
+2 : ('bbP', (True, [1, 3, 37]))
+3 : ('bbbP', (True, [2, 4, None]))
+4 : ('abP', (True, [0, 7, 3]))
+7 : ('abbP', (True, [8, None, 4]))
+8 : ('abbbP', (True, [9, None, 7]))
+9 : ('aabP', (True, [8, 0, 17]))
+17 : ('aabbP', (True, [9, 18, None]))
+18 : ('aabbbP', (True, [17, 1, None]))
+28 : ('baabP', (True, [17, 1, 36]))
+36 : ('baabbP', (True, [18, 37, None]))
+37 : ('baabbbP', (True, [36, 2, None]))
+38 : ('bP', (True, [39, 47, 42]))
+39 : ('bbP', (True, [38, 40, 56]))
+40 : ('bbbP', (True, [39, 41, 75]))
+41 : ('abP', (True, [40, 42, None]))
+42 : ('babP', (True, [38, 45, 41]))
+45 : ('babbP', (True, [46, None, 42]))
+46 : ('babbbP', (True, [47, None, 45]))
+47 : ('baabP', (True, [46, 38, 55]))
+55 : ('baabbP', (True, [47, 56, None]))
+56 : ('baabbbP', (True, [55, 39, None]))
+66 : ('bbaabP', (True, [55, 39, 74]))
+74 : ('bbaabbP', (True, [56, 75, None]))
+75 : ('bbaabbbP', (True, [74, 40, None]))
+Merging Table: 
+{38: 1, 39: 2, 40: 3, 41: 4, 42: 0, 47: 28, 55: 36, 56: 37, 28: 18}
+(True, [(17, 17), (1, 1), (36, 36)])
+combined_merging_table: {38: 1, 39: 2, 40: 3, 41: 4, 42: 0, 47: 28, 55: 36, 56: 37, 28: 18}
+combined_merging_table: {38: 1, 39: 2, 40: 3, 41: 4, 42: 0, 47: 28, 55: 36, 56: 37, 28: 18}
+merging 39 into 2
+with
+Graph: 
+0 : ('P', (True, [1, 9, 4]))
+1 : ('bP', (True, [0, 2, 18]))
+2 : ('bbP', (True, [1, 3, 37]))
+3 : ('bbbP', (True, [2, 4, None]))
+4 : ('abP', (True, [0, 7, 3]))
+7 : ('abbP', (True, [8, None, 4]))
+8 : ('abbbP', (True, [9, None, 7]))
+9 : ('aabP', (True, [8, 0, 17]))
+17 : ('aabbP', (True, [9, 18, None]))
+18 : ('aabbbP', (True, [17, 1, 36]))
+36 : ('baabbP', (True, [18, 37, None]))
+37 : ('baabbbP', (True, [36, 2, None]))
+39 : ('bbP', (True, [1, 3, 37]))
+40 : ('bbbP', (True, [2, 4, 75]))
+41 : ('abP', (True, [3, 0, None]))
+42 : ('babP', (True, [1, 45, 4]))
+45 : ('babbP', (True, [46, None, 0]))
+46 : ('babbbP', (True, [18, None, 45]))
+47 : ('baabP', (True, [46, 1, 36]))
+55 : ('baabbP', (True, [18, 37, None]))
+56 : ('baabbbP', (True, [36, 2, None]))
+66 : ('bbaabP', (True, [36, 2, 74]))
+74 : ('bbaabbP', (True, [37, 75, None]))
+75 : ('bbaabbbP', (True, [74, 3, None]))
+Merging Table: 
+{38: 1, 39: 2, 40: 3, 41: 4, 42: 0, 47: 28, 55: 36, 56: 37, 28: 18}
+{38: 1, 39: 2, 40: 3, 41: 4, 47: 28, 55: 36, 56: 37}
+(True, [(1, 1), (3, 3), (37, 37)])
+combined_merging_table: {56: 37, 38: 1, 39: 2, 40: 3, 41: 4, 55: 36, 47: 28}
+merging 40 into 3
+with
+Graph: 
+0 : ('P', (True, [1, 9, 4]))
+1 : ('bP', (True, [0, 2, 18]))
+2 : ('bbP', (True, [1, 3, 37]))
+3 : ('bbbP', (True, [2, 4, None]))
+4 : ('abP', (True, [0, 7, 3]))
+7 : ('abbP', (True, [8, None, 4]))
+8 : ('abbbP', (True, [9, None, 7]))
+9 : ('aabP', (True, [8, 0, 17]))
+17 : ('aabbP', (True, [9, 18, None]))
+18 : ('aabbbP', (True, [17, 1, 36]))
+36 : ('baabbP', (True, [18, 37, None]))
+37 : ('baabbbP', (True, [36, 2, None]))
+40 : ('bbbP', (True, [2, 4, 75]))
+41 : ('abP', (True, [3, 0, None]))
+42 : ('babP', (True, [1, 45, 4]))
+45 : ('babbP', (True, [46, None, 0]))
+46 : ('babbbP', (True, [18, None, 45]))
+47 : ('baabP', (True, [46, 1, 36]))
+55 : ('baabbP', (True, [18, 37, None]))
+56 : ('baabbbP', (True, [36, 2, None]))
+66 : ('bbaabP', (True, [36, 2, 74]))
+74 : ('bbaabbP', (True, [37, 75, None]))
+75 : ('bbaabbbP', (True, [74, 3, None]))
+Merging Table: 
+{38: 1, 39: 2, 40: 3, 41: 4, 47: 28, 55: 36, 56: 37}
+(True, [(2, 2), (4, 4), (75, 75)])
+combined_merging_table: {56: 37, 38: 1, 39: 2, 40: 3, 41: 4, 55: 36, 47: 28}
+merging 41 into 4
+with
+Graph: 
+0 : ('P', (True, [1, 9, 4]))
+1 : ('bP', (True, [0, 2, 18]))
+2 : ('bbP', (True, [1, 3, 37]))
+3 : ('bbbP', (True, [2, 4, 75]))
+4 : ('abP', (True, [0, 7, 3]))
+7 : ('abbP', (True, [8, None, 4]))
+8 : ('abbbP', (True, [9, None, 7]))
+9 : ('aabP', (True, [8, 0, 17]))
+17 : ('aabbP', (True, [9, 18, None]))
+18 : ('aabbbP', (True, [17, 1, 36]))
+36 : ('baabbP', (True, [18, 37, None]))
+37 : ('baabbbP', (True, [36, 2, None]))
+41 : ('abP', (True, [3, 0, None]))
+42 : ('babP', (True, [1, 45, 4]))
+45 : ('babbP', (True, [46, None, 0]))
+46 : ('babbbP', (True, [18, None, 45]))
+47 : ('baabP', (True, [46, 1, 36]))
+55 : ('baabbP', (True, [18, 37, None]))
+56 : ('baabbbP', (True, [36, 2, None]))
+66 : ('bbaabP', (True, [36, 2, 74]))
+74 : ('bbaabbP', (True, [37, 75, None]))
+75 : ('bbaabbbP', (True, [74, 3, None]))
+Merging Table: 
+{38: 1, 39: 2, 40: 3, 41: 4, 47: 28, 55: 36, 56: 37}
+(True, [(0, 0), (7, 7), (3, 3)])
+combined_merging_table: {56: 37, 38: 1, 39: 2, 40: 3, 41: 4, 55: 36, 47: 28}
+---------------------------------------------------------------------------
+KeyError                                  Traceback (most recent call last)
+<ipython-input-115-1b7def29ade4> in <module>()
+     37     for src, dst in merging_table.iteritems():
+     38         while dst not in new_graph:
+---> 39             dst = merging_table[dst]
+     40         new_graph = merge_vertices(new_graph, src, dst, merging_table)
+     41     graph = new_graph
+
+KeyError: 28
